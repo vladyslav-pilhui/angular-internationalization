@@ -34,8 +34,7 @@ To build the project run:
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
+This will compile your project and store the build artifacts in the `.\dist\appname\browser` directory. By default, the production build optimizes your application for performance and speed.
 
 ## Internationalization (i18n)
 
@@ -57,7 +56,10 @@ Add translation files (e.g., `messages.fr.xlf`, `messages.de.xlf`) in `src/local
 
 You can build for a specific locale using:
 ```bash
-Note: Running these commands separately will overwrite the contents of the `dist/Internationalization` folder with each build. For example, running `ng build --configuration=fr` after `ng build --configuration=de` will replace the previous German build with the French build.
+ng build --configuration=fr
+ng build --configuration=de
+```
+Note: Running these commands separately will overwrite the contents of the `.\dist\appname\browser` folder with each build. For example, running `ng build --configuration=fr` after `ng build --configuration=de` will replace the previous German build with the French build.
 
 #### Building all locales at once
 
@@ -65,7 +67,7 @@ To build all configured locales (e.g., French, German, and default) in one step 
 ```bash
 ng build --localize
 ```
-This will generate separate output folders for each locale under `dist/Internationalization/` (e.g., `dist/Internationalization/fr`, `dist/Internationalization/de`).
+This will generate separate output folders for each locale under `.\dist\appname\browser` (e.g., `.\dist\appname\browser\fr`, `.\dist\appname\browser\de`).
 
 ### Marking text for translation
 
@@ -73,28 +75,6 @@ Use the `i18n` attribute in templates:
 ```html
 <h1 i18n="@@hello">Hello, {{ title() }}</h1>
 ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 ## Serving Localized Versions
 
@@ -115,3 +95,7 @@ Each locale version will be available at:
 - http://localhost:8080/en/
 - http://localhost:8080/fr/
 - http://localhost:8080/de/
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
