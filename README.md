@@ -12,6 +12,12 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+To start for specific locale (e.g. `fr`), run:
+
+```bash
+ng serve --configuration=fr
+```
+
 ## Building
 
 To build the project run:
