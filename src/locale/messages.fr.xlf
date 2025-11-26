@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="hello" datatype="html">
+        <source>Hello, <x id="INTERPOLATION" equiv-text="{{ title() }}"/></source>
+        <target>Bonjour, <x id="INTERPOLATION" equiv-text="{{ title() }}"/></target>
+      </trans-unit>
+      <trans-unit id="congrats" datatype="html">
+        <source>Congratulations! Your app is running. 🎉</source>
+        <target>Félicitations ! Votre application fonctionne. 🎉</target>
+      </trans-unit>
+      <trans-unit id="appTitle" datatype="html">
+        <source>Internationalization</source>
+        <target>Internationalisation</target>
+      </trans-unit>
+      <trans-unit id="exploreDocs" datatype="html">
+        <source>Explore the Docs</source>
+        <target>Explorer la documentation</target>
+      </trans-unit>
+      <trans-unit id="learnTutorials" datatype="html">
+        <source>Learn with Tutorials</source>
+        <target>Apprendre avec des tutoriels</target>
+      </trans-unit>
+      <trans-unit id="aiBestPractices" datatype="html">
+        <source>Prompt and best practices for AI</source>
+        <target>Prompt et bonnes pratiques pour l'IA</target>
+      </trans-unit>
+      <trans-unit id="cliDocs" datatype="html">
+        <source>CLI Docs</source>
+        <target>Documentation CLI</target>
+      </trans-unit>
+      <trans-unit id="languageService" datatype="html">
+        <source>Angular Language Service</source>
+        <target>Service de langue Angular</target>
+      </trans-unit>
+      <trans-unit id="devTools" datatype="html">
+        <source>Angular DevTools</source>
+        <target>Outils de développement Angular</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
