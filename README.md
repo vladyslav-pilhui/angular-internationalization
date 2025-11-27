@@ -25,7 +25,7 @@ To build the project run:
 ```bash
 ng build
 ```
-This will generate separate output folders for each locale under `.\dist\appname\browser` (e.g., `.\dist\appname\browser\fr`, `.\dist\appname\browser\de`). By default, the production build optimizes your application for performance and speed.
+This will generate separate output folders for each locale under `.\dist\internationalization\browser` (e.g., `.\dist\internationalization\browser\fr`, `.\dist\internationalization\browser\de`). By default, the production build optimizes your application for performance and speed.
 
 ## Internationalization (i18n)
 
@@ -38,7 +38,7 @@ You can build for a specific locale using:
 ng build --configuration=fr
 ng build --configuration=de
 ```
-Note: Running these commands separately will overwrite the contents of the `.\dist\appname\browser` folder with each build. For example, running `ng build --configuration=fr` after `ng build --configuration=de` will replace the previous German build with the French build.
+Note: Running these commands separately will overwrite the contents of the `.\dist\internationalization\browser` folder with each build. For example, running `ng build --configuration=fr` after `ng build --configuration=de` will replace the previous German build with the French build.
 
 ### Marking text for translation
 
@@ -70,7 +70,7 @@ npm install -g http-server
 Then run the server from your project root:
 
 ```
-http-server .\dist\Internationalization\browser --port 8080
+http-server .\dist\internationalization\browser --port 8080
 ```
 
 Each locale version will be available at:

@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Internationalization": {
+    "internationalization": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -74,16 +74,16 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "fr": {
-              "buildTarget": "Internationalization:build:fr"
+              "buildTarget": "internationalization:build:fr"
             },
             "de": {
-              "buildTarget": "Internationalization:build:de"
+              "buildTarget": "internationalization:build:de"
             },
             "production": {
-              "buildTarget": "Internationalization:build:production"
+              "buildTarget": "internationalization:build:production"
             },
             "development": {
-              "buildTarget": "Internationalization:build:development"
+              "buildTarget": "internationalization:build:development"
             }
           },
           "defaultConfiguration": "development"
